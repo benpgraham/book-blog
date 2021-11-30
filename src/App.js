@@ -1,20 +1,14 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-import { getPosts } from './contentful/utilities';
 import './App.css';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
 const App = () => {
 
-  const [blogPosts, setBlogPosts] = useState([]);
-
-  useEffect(() => {
-    const data = getPosts();
-    console.log(data);
-  }, []);
-
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Header />
+      <Home />
     </div>
   );
 }

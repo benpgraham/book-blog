@@ -3,7 +3,7 @@ import { client } from "./client";
 const API = {
     async getPosts() {
         const response = await client.getEntries();
-        return response.items.map(posts => posts.fields);
+        return response.items;
     }
 }
 
