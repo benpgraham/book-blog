@@ -25,7 +25,7 @@ const Home = () => {
     }
 
     return (
-        <div>
+        <div className="posts">
             {blogPosts.map((review, index) => <Post key={index} data={review}/>)}
         </div>
     )

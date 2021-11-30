@@ -1,0 +1,11 @@
+header {
+    background-color: black;
+    color: white;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+header .title {
+    grid-column: 2;
+}

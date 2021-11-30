@@ -1,8 +1,9 @@
 import React from "react";
+import './Post.css';
 
 const Post = ({ data }) => {
     return (
-        <div>
+        <div className="post-wrapper"> 
             <h1>{data.fields.title} - {data.fields.bookAuthor}</h1>
             <h2>Review by {data.fields.reviewAuthor}</h2>
             <p>{data.fields.bookReview.content[0].content[0].value}</p>
